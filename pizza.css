@@ -1,0 +1,24 @@
+Header
+{
+    background-image: url(pizza.jpg);
+    text-align: center;
+    width: 550px;
+    height: 220px;
+    margin: auto;
+    font-family: "Cooper Black", times, serif;
+}
+
+body
+{
+    background-color: orange;
+}
+
+h2
+{
+    font-family: "Cooper Black", times, serif;
+}
+
+h3
+{
+    font-family: "Cooper Black", times, serif;
+}

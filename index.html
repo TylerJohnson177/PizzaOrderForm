@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stormy Pizza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pizza.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="code.js"></script>
+</head>
+<body id="page">
+
+<header><h1>Stormy Pizza</h1></header>
+    <div class="container">
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#delivery">Delivery Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#confirmation">Confirmation</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane active">
+                <h2>Pizza Details</h2>
+                <br>
+                <h3>Size</h3>
+
+                <input type="radio" name="size" id="small" checked="checked">
+                    <label for="small">Small 7$</label>
+                <br>
+                <input type="radio" name="size" id="medium">
+                    <label for="medium">Medium 9$</label>
+                <br>
+                <input type="radio" name="size" id="large">
+                    <label for="large">Large 12$</label>
+                <br>
+                <br>
+
+                <h3>Crust</h3>
+                <input type="radio" name="crust" id="thin" checked="checked">
+                    <label for="thin">Thin</label>
+                <br>
+                <input type="radio" name="crust" id="pan">
+                    <label for="pan">Pan</label>
+                <br>
+                <input type="radio" name="crust" id="glutenFree">
+                    <label for="glutenFree">Gluten Free</label>
+                <br>
+                <br>
+                <h3>Meats $1.50 each</h3>
+                <input type="checkbox" name="meats" id="peperoni">
+                    <label for="peperoni">Peperoni</label>
+                <br>
+                <input type="checkbox" name="meats" id="sausage">
+                    <label for="sausage">Sausage</label>
+                <br>
+                <input type="checkbox" name="meats" id="hotDog">
+                    <label for="hotDog">Hotdogs</label>
+                <br>
+                <br>
+                <h3>Fruits/Veggies $1.00 each</h3>
+                <input type="checkbox" name="veggies" id="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                <br>
+                <input type="checkbox" name="veggies" id="onions">
+                    <label for="onions">Onions</label>
+                <br>
+                <input type="checkbox" name="veggies" id="pineapples">
+                    <label for="pineapples">Pineapples</label>
+                <br>
+                <button id="detailsPage">Confirm</button>
+            </div>
+
+            <div id="delivery" class="tab-pane">
+                <h2>Delivery Information</h2>
+                <br>
+                <br>
+                <label for="name">Name</label>
+                    <input type="text" id="name">
+                <br>
+                <br>
+                <label for="address">Street Address</label>
+                    <input type="text" id="address">
+                <br>
+                <br>
+                <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="(xxx)-xxx-xxxx">
+                <br>
+                <br>
+                <button id="deliveryPage">Confirm</button>
+            </div>
+
+            <div id="confirmation" class="tab-pane">
+                <h2>Confirm Your order</h2>
+                <br>
+                <br>
+                <h3>Pizza Details</h3>
+                <br>
+
+                <p id="sizeConfirmation"></p>
+
+                <p id="crustConfirmation"></p>
+
+
+                <p id="meatsConfirmation"></p>
+
+
+                <p id="veggiesConfirmation"></p>
+
+                <h3>Delivery Info</h3>
+                <p id="firstName"></p>
+
+                <p id="streetAddress"></p>
+
+                <p id="phoneNumber"></p>
+
+                <p id="cost"></p>
+                <p id="tax"></p>
+                <p id="deliveryFee"></p>
+                <p id="total"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Popper and Bootstrap second -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
